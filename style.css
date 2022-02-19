@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: red;
+    /* niche scroll bar ko hatane ke liyye esa kia hai */
+    overflow: hidden;
+}
+
+.gameContainer {
+    background-image: url(bg.png);
+    background-repeat: no-repeat;
+    /* background-size: 100vw 100 vh; */
+    /* width: 100%; */
+    height: 100vh;
+    background-size :contain;    
+    background-position: 0% 0%;
+    background-size: 100% 100%;
+   
+}
+
+.dino {
+    background-image: url(dino.png);
+    background-repeat:  no-repeat;
+    width: 233px;
+    height: 114px;
+    background-size :cover;    
+    /* background-color: red; */
+    position: absolute;
+    bottom: 0;
+    left: 52px;
+}
+
+.obstacle {
+    background-image: url(dragon.png);
+    background-repeat:  no-repeat;
+    width: 166px;
+    height: 113px;
+    background-size :cover;    
+    /* background-color: red; */
+    position: absolute;
+    bottom: 0;
+    left: 44vw;
+    /* right: 0; */
+}
+
+.gameOver {
+    /* opacity: 0; */
+    /* visibility: hidden; */
+    position: relative;
+    top: 63px;
+    font-size: 53px;
+    text-align: center;
+    font-family: 'Ubuntu' , sans-serif;
+
+}
+
+#scoreCont{
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: 25px;
+    color: #54212f;
+    position: absolute;
+    right: 45px;
+   top: 31px;
+   border: 2px solid black;
+      padding: 10px;
+   font-family: 'Ubuntu', sans-serif;
+   /* width: 112px; */
+   
+}
+
+
+.animateDino{
+
+      /* mtlb dino naam ka animation banaya hai */
+
+
+    animation: dino 0.7s linear;
+}
+
+/* yaha pe animation likh rhe hai */
+
+@keyframes dino{
+
+    /* jb 0% animation hua hohga */
+ 0%
+ {
+ bottom: 0;
+
+}
+
+    /* jb 0% animation hua hohga */
+
+50%
+{
+bottom: 422px;
+        
+}
+
+    /* jb 0% animation hua hohga */
+
+100%
+{
+bottom: 0;
+        
+}
+
+}
+
+
+.obstacleAni{
+
+    /* mtlb is class se bta rehe hai ki animation banaya hai */
+
+    
+
+  animation: obstaclesAni 5s  linear infinite;
+  /* animation-iteration-count : infinite; */
+}
+
+
+@keyframes obstaclesAni {
+    0%{
+        left: 100vw;
+     }
+       
+    
+       
+ 100%{
+     left: -10vw;
+               
+   }
+}
+
+
+
