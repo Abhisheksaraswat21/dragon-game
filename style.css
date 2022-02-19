@@ -5,7 +5,6 @@
 
 body{
     background-color: red;
-    /* niche scroll bar ko hatane ke liyye esa kia hai */
     overflow: hidden;
 }
 
@@ -75,24 +74,24 @@ body{
 
 .animateDino{
 
-      /* mtlb dino naam ka animation banaya hai */
+      
 
 
     animation: dino 0.7s linear;
 }
 
-/* yaha pe animation likh rhe hai */
+
 
 @keyframes dino{
 
-    /* jb 0% animation hua hohga */
+   
  0%
  {
  bottom: 0;
 
 }
 
-    /* jb 0% animation hua hohga */
+  
 
 50%
 {
@@ -100,7 +99,7 @@ bottom: 422px;
         
 }
 
-    /* jb 0% animation hua hohga */
+   
 
 100%
 {
@@ -113,7 +112,6 @@ bottom: 0;
 
 .obstacleAni{
 
-    /* mtlb is class se bta rehe hai ki animation banaya hai */
 
     
 
